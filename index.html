@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-image: url("yello.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	  background-size:100%;
+    background-position: center center; 
+    color:#000;
+}
+
+.font-white {color:#fff;}
+
+
+#uploader {padding:50px;border:1px solid #fff;background-color:rgba(255,255,255,0.2);}
+
+</style>
+</head>
+<body>
+<center><h1><font color="white">WooHoo Uploader</font></h1></center>
+</body>
+</html>
+<div class="uploader-items" id="uploader">
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<label class="font-white">Select One or Many:</label>
+
+		<input class="font-white" type="file" name="pictures[]" />
+		<input class="font-white"  type="file" name="pictures[]" />
+		<input class="font-white"  type="file" name="pictures[]" />
+		<input type="submit" value="Upload" />
+	</form>
+</div>
+</font>
